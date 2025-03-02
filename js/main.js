@@ -602,27 +602,50 @@
         const portfolioSection = document.querySelector('.portfolio');
         if (!portfolioSection) return;
 
-        // Initialize isotope after images are loaded
+        // Initialize isotope with enhanced animations
         const portfolioIsotope = $('.portfolio-container').isotope({
             itemSelector: '.portfolio-item',
             layoutMode: 'fitRows',
-            transitionDuration: '0.6s'
+            transitionDuration: '0.6s',
+            stagger: 30,
+            hiddenStyle: {
+                opacity: 0,
+                transform: 'scale(0.8) translateY(20px)'
+            },
+            visibleStyle: {
+                opacity: 1,
+                transform: 'scale(1) translateY(0)'
+            }
         });
 
-        // Filter items on button click
+        // Enhanced filter interaction
         $('#portfolio-filter li').on('click', function () {
             $("#portfolio-filter li").removeClass('filter-active');
             $(this).addClass('filter-active');
-            portfolioIsotope.isotope({filter: $(this).data('filter')});
+            
+            // Add pulse effect on click
+            $(this).css('transform', 'scale(1.1)');
+            setTimeout(() => $(this).css('transform', ''), 200);
+            
+            portfolioIsotope.isotope({
+                filter: $(this).data('filter'),
+                stagger: 50,
+                transitionDuration: '0.6s'
+            });
         });
 
-        // Handle card hover effects
+        // Advanced card hover effects
         const cards = portfolioSection.querySelectorAll('.cyber-card');
         cards.forEach(card => {
             card.addEventListener('mousemove', (e) => {
                 const rect = card.getBoundingClientRect();
                 const x = ((e.clientX - rect.left) / card.clientWidth) * 100;
                 const y = ((e.clientY - rect.top) / card.clientHeight) * 100;
+                
+                // Dynamic shadow and transform based on mouse position
+                const moveX = ((x - 50) / 10);
+                const moveY = ((y - 50) / 10);
+                card.style.transform = `perspective(1000px) rotateX(${-moveY}deg) rotateY(${moveX}deg) translateZ(10px)`;
                 
                 // Update corner lights based on mouse position
                 const corners = card.querySelectorAll('.corner-light');
@@ -639,44 +662,59 @@
                     const intensity = 1 - (distance / maxDistance);
                     corner.style.opacity = 0.4 + (intensity * 0.6);
                     corner.style.transform = `scale(${1 + (intensity * 0.5)})`;
+                    corner.style.boxShadow = `0 0 ${15 + intensity * 10}px ${intensity * 5}px rgba(0, 247, 255, ${0.4 + intensity * 0.6})`;
                 });
 
-                // Add glow effect
-                card.style.background = `
-                    radial-gradient(
-                        circle at ${x}% ${y}%,
-                        rgba(0, 247, 255, 0.1) 0%,
-                        rgba(255, 255, 255, 0.02) 50%
-                    )
-                `;
+                // Dynamic gradient overlay
+                const overlay = card.querySelector('.img-overlay');
+                if (overlay) {
+                    overlay.style.background = `
+                        radial-gradient(
+                            circle at ${x}% ${y}%,
+                            rgba(0, 247, 255, 0.2) 0%,
+                            rgba(0, 247, 255, 0.1) 20%,
+                            transparent 50%
+                        )
+                    `;
+                }
             });
 
             card.addEventListener('mouseleave', () => {
+                card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) translateZ(0)';
+                
                 // Reset corner lights
                 const corners = card.querySelectorAll('.corner-light');
                 corners.forEach(corner => {
                     corner.style.opacity = '';
                     corner.style.transform = '';
+                    corner.style.boxShadow = '';
                 });
 
-                // Reset background
-                card.style.background = '';
+                // Reset overlay
+                const overlay = card.querySelector('.img-overlay');
+                if (overlay) {
+                    overlay.style.background = '';
+                }
             });
         });
 
-        // Animate tags on hover
+        // Enhanced tag animations
         const tags = portfolioSection.querySelectorAll('.cyber-tag');
         tags.forEach(tag => {
             tag.addEventListener('mouseenter', function() {
                 this.style.transform = 'translateY(-5px) scale(1.1)';
+                this.style.boxShadow = '0 5px 15px rgba(0, 247, 255, 0.3)';
+                this.style.textShadow = '0 0 5px rgba(0, 247, 255, 0.5)';
             });
 
             tag.addEventListener('mouseleave', function() {
                 this.style.transform = '';
+                this.style.boxShadow = '';
+                this.style.textShadow = '';
             });
         });
 
-        // Add parallax effect to grid
+        // Cyber grid parallax effect
         const grid = portfolioSection.querySelector('.cyber-grid');
         if (grid) {
             portfolioSection.addEventListener('mousemove', (e) => {
@@ -684,16 +722,27 @@
                 const x = (e.clientX - rect.left) / portfolioSection.clientWidth;
                 const y = (e.clientY - rect.top) / portfolioSection.clientHeight;
                 
-                const moveX = (x - 0.5) * 20;
-                const moveY = (y - 0.5) * 20;
+                const moveX = (x - 0.5) * 30;
+                const moveY = (y - 0.5) * 30;
                 
-                grid.style.transform = `translate(${moveX}px, ${moveY}px)`;
+                grid.style.transform = `
+                    perspective(1000px)
+                    rotateX(${moveY}deg)
+                    rotateY(${-moveX}deg)
+                    translateZ(-50px)
+                `;
             });
 
             portfolioSection.addEventListener('mouseleave', () => {
-                grid.style.transform = 'translate(0, 0)';
+                grid.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) translateZ(-50px)';
             });
         }
+
+        // Animate grid lines
+        const gridLines = portfolioSection.querySelectorAll('.grid-lines span');
+        gridLines.forEach((line, index) => {
+            line.style.animationDelay = `${index * 0.5}s`;
+        });
     }
 
     // Initialize portfolio section when DOM is loaded
