@@ -161,53 +161,131 @@
 
         <!-- About Start -->
         <div class="about wow fadeInUp" data-wow-delay="0.1s" id="about">
+            <div class="cyber-particles"></div>
             <div class="container-fluid">
                 <div class="row align-items-center">
                     <div class="col-lg-6">
                         <div class="about-img">
-                            <img src="img/about.jpg" alt="Image">
+                            <div class="cyber-frame">
+                                <div class="frame-corner top-left"><span class="corner-light"></span></div>
+                                <div class="frame-corner top-right"><span class="corner-light"></span></div>
+                                <div class="frame-corner bottom-left"><span class="corner-light"></span></div>
+                                <div class="frame-corner bottom-right"><span class="corner-light"></span></div>
+                                <div class="scan-line"></div>
+                                <div class="glitch-effect">
+                                    <img src="./img/about.png" alt="Profile Image" onerror="this.onerror=null; this.src='./img/about.png'; console.log('Fallback to PNG');">
+                                   
+                                    <img src="./img/about.png" alt="Profile Image" onerror="this.onerror=null; this.src='./img/about.png';">
+                                </div>
+                                <div class="img-overlay"></div>
+                                <div class="cyber-circles">
+                                    <span></span><span></span><span></span>
+                                </div>
+                            </div>
+                            <div class="experience-badge">
+                                <div class="badge-content">
+                                    <div class="hologram-effect"></div>
+                                    <span class="years">6</span>
+                                    <span class="text">Years<br>Experience</span>
+                                    <div class="badge-circles">
+                                        <span></span><span></span><span></span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="about-content">
                             <div class="section-header text-left">
-                                <p>About Me</p>
-                                <h2>6 Years of Experience</h2>
+                                <div class="cyber-title">
+                                    <div class="title-glitch" data-text="About Me">About Me</div>
+                                    <div class="title-shadow">About Me</div>
+                                    <div class="cyber-lines">
+                                        <span></span><span></span><span></span>
+                                    </div>
+                                </div>
+                                <h2 class="cyber-subtitle">Full Stack & Blockchain Developer
+                                    <div class="subtitle-decoration">
+                                        <span class="line"></span>
+                                        <span class="dot"></span>
+                                        <span class="line"></span>
+                                    </div>
+                                </h2>
                             </div>
                             <div class="about-text">
-                                <p>A goal-oriented, techno-functional professional with extensive experience in building scalable and efficient web applications, leveraging technologies such as React.js, Node.js, and blockchain frameworks. Specialized in end-to-end SDLC with expertise in system design, DevOps, and cloud architecture.</p>
+                                <div class="text-container">
+                                    <div class="cyber-scanner"></div>
+                                    <p class="cyber-text">A goal-oriented, techno-functional professional with extensive experience in building scalable and efficient web applications, leveraging technologies such as React.js, Node.js, and blockchain frameworks. Specialized in end-to-end SDLC with expertise in system design, DevOps, and cloud architecture.</p>
+                                </div>
                             </div>
                             <div class="skills">
-                                <div class="skill-name">
-                                    <p>Blockchain Development</p>
-                                    <p>95%</p>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                                <div class="skill-name">
-                                    <p>Frontend Development</p>
-                                    <p>90%</p>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                                <div class="skill-name">
-                                    <p>Backend Development</p>
-                                    <p>85%</p>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                                <div class="skill-name">
-                                    <p>DevOps & Cloud</p>
-                                    <p>80%</p>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="skill-grid">
+                                    <div class="skill-item" data-progress="95">
+                                        <div class="skill-info">
+                                            <span class="skill-name">Blockchain Development</span>
+                                            <span class="skill-percentage">95%</span>
+                                        </div>
+                                        <div class="skill-progress">
+                                            <div class="progress-bar">
+                                                <div class="progress-glow"></div>
+                                            </div>
+                                            <div class="progress-circles">
+                                                <span></span><span></span><span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item" data-progress="90">
+                                        <div class="skill-info">
+                                            <span class="skill-name">Frontend Development</span>
+                                            <span class="skill-percentage">90%</span>
+                                        </div>
+                                        <div class="skill-progress">
+                                            <div class="progress-bar">
+                                                <div class="progress-glow"></div>
+                                            </div>
+                                            <div class="progress-circles">
+                                                <span></span><span></span><span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item" data-progress="85">
+                                        <div class="skill-info">
+                                            <span class="skill-name">Backend Development</span>
+                                            <span class="skill-percentage">85%</span>
+                                        </div>
+                                        <div class="skill-progress">
+                                            <div class="progress-bar">
+                                                <div class="progress-glow"></div>
+                                            </div>
+                                            <div class="progress-circles">
+                                                <span></span><span></span><span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item" data-progress="80">
+                                        <div class="skill-info">
+                                            <span class="skill-name">DevOps & Cloud</span>
+                                            <span class="skill-percentage">80%</span>
+                                        </div>
+                                        <div class="skill-progress">
+                                            <div class="progress-bar">
+                                                <div class="progress-glow"></div>
+                                            </div>
+                                            <div class="progress-circles">
+                                                <span></span><span></span><span></span>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <a class="btn" href="#experience">Learn More</a>
+                            <a class="btn cyber-btn" href="#experience">
+                                <span class="btn-line"></span>
+                                <span class="btn-line"></span>
+                                <span class="btn-line"></span>
+                                <span class="btn-line"></span>
+                                <span class="btn-text">Learn More</span>
+                                <div class="btn-particles"></div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -217,183 +295,219 @@
         
         <!-- Skills Start -->
         <div class="skills-section" id="skills">
-            <div class="container">
+            <div class="cyber-grid">
+                <div class="grid-line"></div>
+            </div>
+            <div class="container position-relative">
                 <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                    <p>My Skills</p>
-                    <h2>Technical Expertise</h2>
+                    <p>Technical Expertise</p>
+                    <h2>My Skills</h2>
                 </div>
-                <div class="row">
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="skills-box">
-                            <h3>Programming Languages</h3>
-                            <div class="skill-item">
-                                <p>Solidity / Rust</p>
-                                <div class="skill-progress">
-                                    <div class="progress-bar" style="width: 95%">
-                                        <span>95%</span>
-                                    </div>
-                                </div>
+                <div class="skills-container">
+                    <!-- Blockchain Development -->
+                    <div class="skill-hexagon">
+                        <div class="skill-card" data-tilt data-tilt-max="15" data-tilt-glare data-tilt-max-glare="0.8">
+                            <div class="skill-icon">
+                                <i class="fab fa-ethereum"></i>
                             </div>
-                            <div class="skill-item">
-                                <p>JavaScript / TypeScript</p>
-                                <div class="skill-progress">
-                                    <div class="progress-bar" style="width: 90%">
-                                        <span>90%</span>
-                                    </div>
-                                </div>
+                            <h3 class="neon-text">Blockchain Development</h3>
+                            <div class="skill-rating" data-rating="4.8">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span class="rating-text">4.8/5</span>
                             </div>
-                            <div class="skill-item">
-                                <p>Python / Go</p>
-                                <div class="skill-progress">
-                                    <div class="progress-bar" style="width: 85%">
-                                        <span>85%</span>
-                                    </div>
-                                </div>
+                            <div class="skill-tags">
+                                <span class="cyber-tag">Solidity</span>
+                                <span class="cyber-tag">Ethereum</span>
+                                <span class="cyber-tag">Solana</span>
+                                <span class="cyber-tag">Rust</span>
+                                <span class="cyber-tag">Web3.js</span>
+                                <span class="cyber-tag">Truffle</span>
+                                <span class="cyber-tag">Cosmos</span>
+                                <span class="cyber-tag">Tron</span>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="skills-box">
-                            <h3>Frameworks & Libraries</h3>
-                            <div class="skill-item">
-                                <p>React.js / Next.js</p>
-                                <div class="skill-progress">
-                                    <div class="progress-bar" style="width: 95%">
-                                        <span>95%</span>
-                                    </div>
-                                </div>
+
+                    <!-- Frontend Development -->
+                    <div class="skill-hexagon">
+                        <div class="skill-card" data-tilt data-tilt-max="15" data-tilt-glare data-tilt-max-glare="0.8">
+                            <div class="skill-icon">
+                                <i class="fab fa-react"></i>
                             </div>
-                            <div class="skill-item">
-                                <p>Redux / Web3.js</p>
-                                <div class="skill-progress">
-                                    <div class="progress-bar" style="width: 90%">
-                                        <span>90%</span>
-                                    </div>
-                                </div>
+                            <h3 class="neon-text">Frontend Development</h3>
+                            <div class="skill-rating" data-rating="4.5">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span class="rating-text">4.5/5</span>
                             </div>
-                            <div class="skill-item">
-                                <p>FastAPI / GraphQL</p>
-                                <div class="skill-progress">
-                                    <div class="progress-bar" style="width: 85%">
-                                        <span>85%</span>
-                                    </div>
-                                </div>
+                            <div class="skill-tags">
+                                <span class="cyber-tag">React.js</span>
+                                <span class="cyber-tag">Next.js</span>
+                                <span class="cyber-tag">TypeScript</span>
+                                <span class="cyber-tag">Redux</span>
+                                <span class="cyber-tag">Gatsby</span>
+                                <span class="cyber-tag">Sass</span>
+                                <span class="cyber-tag">GraphQL</span>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="skills-box">
-                            <h3>Blockchain Technologies</h3>
-                            <div class="skill-item">
-                                <p>Ethereum / Solana</p>
-                                <div class="skill-progress">
-                                    <div class="progress-bar" style="width: 95%">
-                                        <span>95%</span>
-                                    </div>
-                                </div>
+
+                    <!-- Backend Development -->
+                    <div class="skill-hexagon">
+                        <div class="skill-card" data-tilt data-tilt-max="15" data-tilt-glare data-tilt-max-glare="0.8">
+                            <div class="skill-icon">
+                                <i class="fas fa-server"></i>
                             </div>
-                            <div class="skill-item">
-                                <p>Tron / Cosmos</p>
-                                <div class="skill-progress">
-                                    <div class="progress-bar" style="width: 90%">
-                                        <span>90%</span>
-                                    </div>
-                                </div>
+                            <h3 class="neon-text">Backend Development</h3>
+                            <div class="skill-rating" data-rating="4.0">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span class="rating-text">4.0/5</span>
                             </div>
-                            <div class="skill-item">
-                                <p>Smart Contracts / DApps</p>
-                                <div class="skill-progress">
-                                    <div class="progress-bar" style="width: 95%">
-                                        <span>95%</span>
-                                    </div>
-                                </div>
+                            <div class="skill-tags">
+                                <span class="cyber-tag">Python</span>
+                                <span class="cyber-tag">FastAPI</span>
+                                <span class="cyber-tag">Go</span>
+                                <span class="cyber-tag">REST API</span>
+                                <span class="cyber-tag">Node.js</span>
+                                <span class="cyber-tag">GraphQL</span>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.8s">
-                        <div class="skills-box">
-                            <h3>DevOps & Cloud</h3>
-                            <div class="skill-item">
-                                <p>Docker / Kubernetes</p>
-                                <div class="skill-progress">
-                                    <div class="progress-bar" style="width: 90%">
-                                        <span>90%</span>
-                                    </div>
-                                </div>
+
+                    <!-- Database & System Design -->
+                    <div class="skill-hexagon">
+                        <div class="skill-card" data-tilt data-tilt-max="15" data-tilt-glare data-tilt-max-glare="0.8">
+                            <div class="skill-icon">
+                                <i class="fas fa-database"></i>
                             </div>
-                            <div class="skill-item">
-                                <p>AWS / Jenkins</p>
-                                <div class="skill-progress">
-                                    <div class="progress-bar" style="width: 85%">
-                                        <span>85%</span>
-                                    </div>
-                                </div>
+                            <h3 class="neon-text">Database </h3>
+                            <div class="skill-rating" data-rating="4.3">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span class="rating-text">4.3/5</span>
                             </div>
-                            <div class="skill-item">
-                                <p>New Relic / Sentry</p>
-                                <div class="skill-progress">
-                                    <div class="progress-bar" style="width: 80%">
-                                        <span>80%</span>
-                                    </div>
-                                </div>
+                            <div class="skill-tags">
+                                <span class="cyber-tag">MongoDB</span>
+                                <span class="cyber-tag">PostgreSQL</span>
+                                <span class="cyber-tag">MySQL</span>
+                                <span class="cyber-tag">System Design</span>
+                                <span class="cyber-tag">OOP</span>
+                                <span class="cyber-tag">Data Structures</span>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="1.0s">
-                        <div class="skills-box">
-                            <h3>Testing & Tools</h3>
-                            <div class="skill-item">
-                                <p>Jest / Cypress</p>
-                                <div class="skill-progress">
-                                    <div class="progress-bar" style="width: 90%">
-                                        <span>90%</span>
-                                    </div>
-                                </div>
+
+                    <!-- DevOps & Cloud -->
+                    <div class="skill-hexagon">
+                        <div class="skill-card" data-tilt data-tilt-max="15" data-tilt-glare data-tilt-max-glare="0.8">
+                            <div class="skill-icon">
+                                <i class="fas fa-cloud"></i>
                             </div>
-                            <div class="skill-item">
-                                <p>Postman / JMeter</p>
-                                <div class="skill-progress">
-                                    <div class="progress-bar" style="width: 85%">
-                                        <span>85%</span>
-                                    </div>
-                                </div>
+                            <h3 class="neon-text">DevOps & Cloud</h3>
+                            <div class="skill-rating" data-rating="4.2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span class="rating-text">4.2/5</span>
                             </div>
-                            <div class="skill-item">
-                                <p>Git / GitHub</p>
-                                <div class="skill-progress">
-                                    <div class="progress-bar" style="width: 95%">
-                                        <span>95%</span>
-                                    </div>
-                                </div>
+                            <div class="skill-tags">
+                                <span class="cyber-tag">AWS</span>
+                                <span class="cyber-tag">Docker</span>
+                                <span class="cyber-tag">Kubernetes</span>
+                                <span class="cyber-tag">Jenkins</span>
+                                <span class="cyber-tag">Nagios</span>
+                                <span class="cyber-tag">New Relic</span>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="1.2s">
-                        <div class="skills-box">
-                            <h3>Databases & System Design</h3>
-                            <div class="skill-item">
-                                <p>MongoDB / PostgreSQL</p>
-                                <div class="skill-progress">
-                                    <div class="progress-bar" style="width: 90%">
-                                        <span>90%</span>
-                                    </div>
-                                </div>
+
+                    <!-- Testing & Quality -->
+                    <div class="skill-hexagon">
+                        <div class="skill-card" data-tilt data-tilt-max="15" data-tilt-glare data-tilt-max-glare="0.8">
+                            <div class="skill-icon">
+                                <i class="fas fa-vial"></i>
                             </div>
-                            <div class="skill-item">
-                                <p>System Architecture</p>
-                                <div class="skill-progress">
-                                    <div class="progress-bar" style="width: 85%">
-                                        <span>85%</span>
-                                    </div>
-                                </div>
+                            <h3 class="neon-text">Testing & Quality</h3>
+                            <div class="skill-rating" data-rating="4.4">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span class="rating-text">4.4/5</span>
                             </div>
-                            <div class="skill-item">
-                                <p>Security & OOP</p>
-                                <div class="skill-progress">
-                                    <div class="progress-bar" style="width: 85%">
-                                        <span>85%</span>
-                                    </div>
-                                </div>
+                            <div class="skill-tags">
+                                <span class="cyber-tag">Jest</span>
+                                <span class="cyber-tag">Cypress</span>
+                                <span class="cyber-tag">JMeter</span>
+                                <span class="cyber-tag">Postman</span>
+                                <span class="cyber-tag">Chai</span>
+                                <span class="cyber-tag">Jasmine</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tools & Collaboration -->
+                    <div class="skill-hexagon">
+                        <div class="skill-card" data-tilt data-tilt-max="15" data-tilt-glare data-tilt-max-glare="0.8">
+                            <div class="skill-icon">
+                                <i class="fas fa-tools"></i>
+                            </div>
+                            <h3 class="neon-text">Tools & Collaboration</h3>
+                            <div class="skill-rating" data-rating="4.6">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span class="rating-text">4.6/5</span>
+                            </div>
+                            <div class="skill-tags">
+                                <span class="cyber-tag">Git</span>
+                                <span class="cyber-tag">GitHub</span>
+                                <span class="cyber-tag">Jira</span>
+                                <span class="cyber-tag">Linux</span>
+                                <span class="cyber-tag">VirtualBox</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Security & Infrastructure -->
+                    <div class="skill-hexagon">
+                        <div class="skill-card" data-tilt data-tilt-max="15" data-tilt-glare data-tilt-max-glare="0.8">
+                            <div class="skill-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h3 class="neon-text">Security & Infrastructure</h3>
+                            <div class="skill-rating" data-rating="4.1">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span class="rating-text">4.1/5</span>
+                            </div>
+                            <div class="skill-tags">
+                                <span class="cyber-tag">SSL/TLS</span>
+                                <span class="cyber-tag">Sentry</span>
+                                <span class="cyber-tag">System Admin</span>
+                                <span class="cyber-tag">Security Protocols</span>
                             </div>
                         </div>
                     </div>
@@ -479,98 +593,213 @@
         <!-- Service End -->
         
         
-         <!-- Experience Start -->
+        <!-- Experience Start -->
         <div class="experience" id="experience">
+            <div class="cyber-grid">
+                <div class="grid-line"></div>
+            </div>
             <div class="container">
                 <div class="section-header text-center">
-                    <p>Experience</p>
-                    <h2>My Career Journey</h2>
+                    <div class="cyber-title">
+                        <div class="title-glitch" data-text="Experience">Experience</div>
+                        <div class="title-shadow">Experience</div>
+                        <div class="cyber-lines">
+                            <span></span><span></span><span></span>
+                        </div>
+                    </div>
+                    <h2 class="cyber-subtitle">My Career Journey
+                        <div class="subtitle-decoration">
+                            <span class="line"></span>
+                            <span class="dot"></span>
+                            <span class="line"></span>
+                        </div>
+                    </h2>
                 </div>
                 <div class="timeline">
                     <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
                         <div class="timeline-text">
-                            <div class="timeline-date">2023 - 2024</div>
-                            <h2>Full Stack Developer</h2>
-                            <h4>Xpertdox, Noida</h4>
-                            <p>
-                                • Led development of decentralized healthcare solutions using Solana blockchain and Rust<br>
-                                • Architected and implemented patient medical record system with end-to-end encryption<br>
-                                • Developed smart contracts for secure data management and access control<br>
-                                • Built responsive frontend using React.js with TypeScript and Material-UI<br>
-                                • Implemented RESTful APIs using Node.js and Express.js with MongoDB<br>
-                                • Set up CI/CD pipelines using GitHub Actions and Docker containers<br>
-                                • Optimized application performance resulting in 40% faster load times
-                            </p>
+                            <div class="timeline-date">
+                                <div class="date-chip">2023 - 2024</div>
+                                <div class="date-line"></div>
+                            </div>
+                            <div class="cyber-card">
+                                <div class="card-frame">
+                                    <div class="frame-corner top-left"></div>
+                                    <div class="frame-corner top-right"></div>
+                                    <div class="frame-corner bottom-left"></div>
+                                    <div class="frame-corner bottom-right"></div>
+                                    <div class="content-wrapper">
+                                        <h2>Full Stack Developer</h2>
+                                        <h4>Xpertdox, Noida</h4>
+                                        <div class="tech-tags">
+                                            <span class="cyber-tag">Solana</span>
+                                            <span class="cyber-tag">Rust</span>
+                                            <span class="cyber-tag">React</span>
+                                            <span class="cyber-tag">Node.js</span>
+                                        </div>
+                                        <p>
+                                            • Led development of decentralized healthcare solutions using Solana blockchain and Rust<br>
+                                            • Architected and implemented patient medical record system with end-to-end encryption<br>
+                                            • Developed smart contracts for secure data management and access control<br>
+                                            • Built responsive frontend using React.js with TypeScript and Material-UI<br>
+                                            • Implemented RESTful APIs using Node.js and Express.js with MongoDB<br>
+                                            • Set up CI/CD pipelines using GitHub Actions and Docker containers<br>
+                                            • Optimized application performance resulting in 40% faster load times
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card-glow"></div>
+                            </div>
                         </div>
                     </div>
                     <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
                         <div class="timeline-text">
-                            <div class="timeline-date">2022 - 2023</div>
-                            <h2>Blockchain Developer</h2>
-                            <h4>Freelance</h4>
-                            <p>
-                                • Developed and deployed smart contracts on Ethereum and Solana networks<br>
-                                • Created DeFi applications with features like staking, swapping, and yield farming<br>
-                                • Implemented Web3 authentication and wallet integration<br>
-                                • Built NFT marketplaces with React Three Fiber for 3D visualization<br>
-                                • Integrated IPFS for decentralized storage solutions<br>
-                                • Performed smart contract audits and implemented security best practices<br>
-                                • Optimized gas costs resulting in 30% reduction in transaction fees
-                            </p>
+                            <div class="timeline-date">
+                                <div class="date-chip">2022 - 2023</div>
+                                <div class="date-line"></div>
+                            </div>
+                            <div class="cyber-card">
+                                <div class="card-frame">
+                                    <div class="frame-corner top-left"></div>
+                                    <div class="frame-corner top-right"></div>
+                                    <div class="frame-corner bottom-left"></div>
+                                    <div class="frame-corner bottom-right"></div>
+                                    <div class="content-wrapper">
+                                        <h2>Blockchain Developer</h2>
+                                        <h4>Freelance</h4>
+                                        <div class="tech-tags">
+                                            <span class="cyber-tag">Ethereum</span>
+                                            <span class="cyber-tag">Solana</span>
+                                            <span class="cyber-tag">Web3</span>
+                                            <span class="cyber-tag">Smart Contracts</span>
+                                        </div>
+                                        <p>
+                                            • Developed and deployed smart contracts on Ethereum and Solana networks<br>
+                                            • Created DeFi applications with features like staking, swapping, and yield farming<br>
+                                            • Implemented Web3 authentication and wallet integration<br>
+                                            • Built NFT marketplaces with React Three Fiber for 3D visualization<br>
+                                            • Integrated IPFS for decentralized storage solutions<br>
+                                            • Performed smart contract audits and implemented security best practices<br>
+                                            • Optimized gas costs resulting in 30% reduction in transaction fees
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card-glow"></div>
+                            </div>
                         </div>
                     </div>
                     <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
                         <div class="timeline-text">
-                            <div class="timeline-date">2021 - 2022</div>
-                            <h2>Software Engineer</h2>
-                            <h4>Accion Labs, Bengaluru</h4>
-                            <p>
-                                • Developed microservices architecture using Node.js and Python<br>
-                                • Implemented real-time data processing pipeline using Apache Kafka<br>
-                                • Created REST APIs with FastAPI and GraphQL integration<br>
-                                • Built responsive web applications using Next.js and Redux<br>
-                                • Set up monitoring and logging using ELK stack and New Relic<br>
-                                • Implemented automated testing with Jest and Cypress<br>
-                                • Reduced API response time by 50% through caching and optimization
-                            </p>
+                            <div class="timeline-date">
+                                <div class="date-chip">2021 - 2022</div>
+                                <div class="date-line"></div>
+                            </div>
+                            <div class="cyber-card">
+                                <div class="card-frame">
+                                    <div class="frame-corner top-left"></div>
+                                    <div class="frame-corner top-right"></div>
+                                    <div class="frame-corner bottom-left"></div>
+                                    <div class="frame-corner bottom-right"></div>
+                                    <div class="content-wrapper">
+                                        <h2>Software Engineer</h2>
+                                        <h4>Accion Labs, Bengaluru</h4>
+                                        <div class="tech-tags">
+                                            <span class="cyber-tag">Node.js</span>
+                                            <span class="cyber-tag">Python</span>
+                                            <span class="cyber-tag">Apache Kafka</span>
+                                            <span class="cyber-tag">REST APIs</span>
+                                        </div>
+                                        <p>
+                                            • Developed microservices architecture using Node.js and Python<br>
+                                            • Implemented real-time data processing pipeline using Apache Kafka<br>
+                                            • Created REST APIs with FastAPI and GraphQL integration<br>
+                                            • Built responsive web applications using Next.js and Redux<br>
+                                            • Set up monitoring and logging using ELK stack and New Relic<br>
+                                            • Implemented automated testing with Jest and Cypress<br>
+                                            • Reduced API response time by 50% through caching and optimization
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card-glow"></div>
+                            </div>
                         </div>
                     </div>
                     <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
                         <div class="timeline-text">
-                            <div class="timeline-date">2018 - 2020</div>
-                            <h2>Full Stack Developer</h2>
-                            <h4>Nulurn Edutech Pvt. Ltd., Bengaluru</h4>
-                            <p>
-                                • Developed comprehensive e-learning platform using MERN stack<br>
-                                • Implemented real-time video streaming and chat functionality<br>
-                                • Created interactive assessment modules and progress tracking<br>
-                                • Built faculty portal with course management capabilities<br>
-                                • Integrated payment gateway and subscription management<br>
-                                • Implemented AWS S3 for content delivery and storage<br>
-                                • Achieved 99.9% platform uptime through robust architecture
-                            </p>
+                            <div class="timeline-date">
+                                <div class="date-chip">2018 - 2020</div>
+                                <div class="date-line"></div>
+                            </div>
+                            <div class="cyber-card">
+                                <div class="card-frame">
+                                    <div class="frame-corner top-left"></div>
+                                    <div class="frame-corner top-right"></div>
+                                    <div class="frame-corner bottom-left"></div>
+                                    <div class="frame-corner bottom-right"></div>
+                                    <div class="content-wrapper">
+                                        <h2>Full Stack Developer</h2>
+                                        <h4>Nulurn Edutech Pvt. Ltd., Bengaluru</h4>
+                                        <div class="tech-tags">
+                                            <span class="cyber-tag">MERN Stack</span>
+                                            <span class="cyber-tag">Real-time Video Streaming</span>
+                                            <span class="cyber-tag">Interactive Modules</span>
+                                            <span class="cyber-tag">Payment Gateway</span>
+                                        </div>
+                                        <p>
+                                            • Developed comprehensive e-learning platform using MERN stack<br>
+                                            • Implemented real-time video streaming and chat functionality<br>
+                                            • Created interactive assessment modules and progress tracking<br>
+                                            • Built faculty portal with course management capabilities<br>
+                                            • Integrated payment gateway and subscription management<br>
+                                            • Implemented AWS S3 for content delivery and storage<br>
+                                            • Achieved 99.9% platform uptime through robust architecture
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card-glow"></div>
+                            </div>
                         </div>
                     </div>
                     <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
                         <div class="timeline-text">
-                            <div class="timeline-date">2017 - 2018</div>
-                            <h2>Web Developer</h2>
-                            <h4>Greatwits Services, New Delhi</h4>
-                            <p>
-                                • Developed responsive websites using React.js and Bootstrap<br>
-                                • Created RESTful APIs using Node.js and Express.js<br>
-                                • Implemented user authentication and authorization<br>
-                                • Integrated third-party APIs and payment gateways<br>
-                                • Performed code reviews and maintained coding standards<br>
-                                • Optimized database queries and implemented caching<br>
-                                • Reduced page load time by 60% through performance optimization
-                            </p>
+                            <div class="timeline-date">
+                                <div class="date-chip">2017 - 2018</div>
+                                <div class="date-line"></div>
+                            </div>
+                            <div class="cyber-card">
+                                <div class="card-frame">
+                                    <div class="frame-corner top-left"></div>
+                                    <div class="frame-corner top-right"></div>
+                                    <div class="frame-corner bottom-left"></div>
+                                    <div class="frame-corner bottom-right"></div>
+                                    <div class="content-wrapper">
+                                        <h2>Web Developer</h2>
+                                        <h4>Greatwits Services, New Delhi</h4>
+                                        <div class="tech-tags">
+                                            <span class="cyber-tag">React.js</span>
+                                            <span class="cyber-tag">Bootstrap</span>
+                                            <span class="cyber-tag">REST APIs</span>
+                                            <span class="cyber-tag">User Authentication</span>
+                                        </div>
+                                        <p>
+                                            • Developed responsive websites using React.js and Bootstrap<br>
+                                            • Created RESTful APIs using Node.js and Express.js<br>
+                                            • Implemented user authentication and authorization<br>
+                                            • Integrated third-party APIs and payment gateways<br>
+                                            • Performed code reviews and maintained coding standards<br>
+                                            • Optimized database queries and implemented caching<br>
+                                            • Reduced page load time by 60% through performance optimization
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card-glow"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Job Experience End -->
+        <!-- Experience End -->
         
         
         <!-- Banner Start -->
@@ -593,45 +822,76 @@
 
         <!-- Portfolio Start -->
         <div class="portfolio" id="portfolio">
+            <div class="cyber-grid">
+                <div class="grid-lines">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
             <div class="container">
                 <div class="section-header text-center">
-                    <p>Portfolio</p>
-                    <h2>My Key Projects</h2>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <ul id="portfolio-filter">
-                            <li data-filter="*" class="filter-active">All</li>
-                            <li data-filter=".blockchain">Blockchain</li>
-                            <li data-filter=".healthcare">Healthcare</li>
-                            <li data-filter=".elearning">E-Learning</li>
-                            <li data-filter=".ecommerce">E-Commerce</li>
-                            <li data-filter=".analytics">Analytics</li>
-                        </ul>
+                    <div class="cyber-title">
+                        <div class="title-glitch" data-text="Portfolio">Portfolio</div>
+                        <div class="title-shadow">Portfolio</div>
+                        <div class="cyber-lines">
+                            <span></span><span></span><span></span>
+                        </div>
                     </div>
+                    <h2 class="cyber-subtitle">My Key Projects
+                        <div class="subtitle-decoration">
+                            <span class="line"></span>
+                            <span class="dot"></span>
+                            <span class="line"></span>
+                        </div>
+                    </h2>
+                </div>
+                <div class="filter-container">
+                    <ul id="portfolio-filter">
+                        <li data-filter="*" class="filter-active">All</li>
+                        <li data-filter=".blockchain">Blockchain</li>
+                        <li data-filter=".healthcare">Healthcare</li>
+                        <li data-filter=".elearning">E-Learning</li>
+                        <li data-filter=".ecommerce">E-Commerce</li>
+                        <li data-filter=".analytics">Analytics</li>
+                    </ul>
                 </div>
                 <div class="row portfolio-container">
                     <!-- Decentralized Voting System -->
                     <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item blockchain wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="portfolio-wrap">
+                        <div class="portfolio-wrap cyber-card">
+                            <div class="card-frame">
+                                <div class="frame-corner top-left"><span class="corner-light"></span></div>
+                                <div class="frame-corner top-right"><span class="corner-light"></span></div>
+                                <div class="frame-corner bottom-left"><span class="corner-light"></span></div>
+                                <div class="frame-corner bottom-right"><span class="corner-light"></span></div>
+                            </div>
                             <div class="portfolio-img">
                                 <img src="img/portfolio-1.jpg" alt="Decentralized Voting System">
+                                <div class="img-overlay"></div>
                             </div>
                             <div class="portfolio-text">
-                                <h3>Decentralized Voting System</h3>
+                                <div class="project-title">
+                                    <h3>Decentralized Voting System</h3>
+                                    <div class="title-line"></div>
+                                </div>
                                 <p>A cutting-edge decentralized voting application on Solana blockchain ensuring secure, transparent elections with real-time management.</p>
                                 <div class="tech-stack">
-                                    <span class="badge">Solana</span>
-                                    <span class="badge">Rust</span>
-                                    <span class="badge">Anchor</span>
-                                    <span class="badge">React.js</span>
-                                    <span class="badge">Next.js</span>
-                                    <span class="badge">Node.js</span>
-                                    <span class="badge">TypeScript</span>
-                                    <span class="badge">Docker</span>
-                                    <span class="badge">Kubernetes</span>
-                                    <span class="badge">IPFS</span>
+                                    <span class="cyber-tag">Solana</span>
+                                    <span class="cyber-tag">Rust</span>
+                                    <span class="cyber-tag">Anchor</span>
+                                    <span class="cyber-tag">React.js</span>
+                                    <span class="cyber-tag">Next.js</span>
+                                    <span class="cyber-tag">Node.js</span>
+                                    <span class="cyber-tag">TypeScript</span>
+                                    <span class="cyber-tag">Docker</span>
                                 </div>
+                                <a href="#" class="cyber-btn">
+                                    <span class="btn-line"></span>
+                                    <span class="btn-line"></span>
+                                    <span class="btn-line"></span>
+                                    <span class="btn-line"></span>
+                                    <span class="btn-text">View Details</span>
+                                    <div class="btn-particles"></div>
+                                </a>
                             </div>
                         </div>
                     </div>
